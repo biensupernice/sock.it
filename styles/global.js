@@ -13,6 +13,25 @@ export default StyleSheet.create({
     alignContent: "center",
     alignItems: "center"
   },
+  header: {
+    height: 100,
+    justifyContent: "center",
+    paddingHorizontal: 100,
+    marginTop: 50,
+    justifyContent: "space-between"
+  },
+
+  header_title: {
+    fontSize: 40,
+    fontWeight: "800",
+    color: "#424242",
+    marginBottom: 8
+  },
+  header_sub_title: {
+    fontSize: 25,
+    fontWeight: "400",
+    color: "#7E7E7E"
+  },
   monitor_card_container: {
     flex: 1,
     flexDirection: "row",
@@ -30,14 +49,14 @@ export default StyleSheet.create({
     borderRadius: 20,
     marginVertical: 10,
     marginHorizontal: 1,
-    shadowColor: "#9429FF",
     shadowOffset: {
       width: 0,
       height: 2
     },
-    shadowOpacity: 0.1,
+    shadowOpacity: 0.15,
     shadowRadius: 30,
-    elevation: 4
+    elevation: 4,
+    shadowColor: "#9429FF"
   },
   card_container: {
     alignItems: "center",
@@ -67,5 +86,13 @@ export default StyleSheet.create({
   card_icon: {
     height: 20,
     resizeMode: "contain"
+  },
+  alert: {},
+  alert_text: {},
+  warning: {},
+  warning_text: {},
+  graph_container: {
+    paddingHorizontal: 20,
+    overflow: "hidden"
   }
 });

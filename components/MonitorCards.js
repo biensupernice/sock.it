@@ -12,15 +12,17 @@ export function MonitorCards(props) {
     <View style={styles.monitor_card_container}>
       <Card
         headline="Beats Per Minute"
-        action_item="97"
+        action_item={props.heartbeat}
         action_type="bpm"
         icon={require("../assets/heart.png")}
+        alert={props.alertHeartbeat}
       />
       <Card
         headline="Oxygen Saturation"
-        action_item="100"
+        action_item={props.oxygen}
         action_type="% Sp0₂"
-        icon={require("../assets/oxygen_tank.png")}
+        icon={require("../assets/wind.png")}
+        alert={props.alertOxygen}
       />
     </View>
   );
